@@ -944,10 +944,7 @@ private:
         model_aliases = params_base.model_alias;
         model_tags    = params_base.model_tags;
 
-        // propagate new defaults back to caller
-        params = params_base;
-
-        if (!is_resume) {
+         if (!is_resume) {
             return init();
         }
 
